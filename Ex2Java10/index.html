@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desempenho de Vendas</title>
+</head>
+<body>
+    <h1>Desempenho de Vendas</h1>
+    <form id="vendasForm">
+        <label for="valorVendido">Valor vendido no mês:</label>
+        <input type="number" id="valorVendido" step="0.01" min="0">
+        <label for="meta">Meta de vendas:</label>
+        <input type="number" id="meta" step="0.01" min="0">
+        <label for="metaMinima">Meta mínima de vendas:</label>
+        <input type="number" id="metaMinima" step="0.01" min="0">
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado" style="display: none;">
+        <h2>Resultado:</h2>
+        <p id="atingiuMeta"></p>
+        <p id="percentualMeta"></p>
+        <p id="percentualMetaMinima"></p>
+    </div>
+
+    <script src="Ex2Java10.js"></script>
+</body>
+</html>
